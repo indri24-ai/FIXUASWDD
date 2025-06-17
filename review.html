@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Review - Glamoure Glow</title>
+  <link rel="stylesheet" href="style.css" />
+  
+    
+
+</head>
+<body>
+  <header>
+    <div class="logo">GLAMOURE GLOW</div>
+    <nav>
+      <a href="index.html">HOME</a>
+      <a href="about.html">ABOUT</a>
+      <a href="shop.html">SHOP</a>
+      <a href="review.html" class="active">REVIEW</a>
+      <a href="ourteam.html">OUR TEAM</a>
+    </nav>
+    <div class="cart-icon">🛒</div>
+  </header>
+
+  <main class="review-section">
+    <div class="review-container">
+      <div class="review-left">
+        <h2>Leave a Review!</h2>
+        <p><em>Please fill out the form below to send us an email.</em></p>
+        <p>
+          Kami ingin mendengar pendapatmu tentang produk Glamour Glow! Silakan tinggalkan reviewmu di bawah ini, dan kami akan menerimanya melalui email. Reviewmu akan membantu kami meningkatkan kualitas produk dan layanan kami. Terima kasih atas partisipasimu!
+        </p>
+        <p><strong>E-mail:</strong><br> holace874@gmail.com</p>
+      </div>
+
+      <div class="review-right">
+        <form action="https://formspree.io/f/yourFormID" method="POST">
+          <input type="text" name="name" placeholder="NAME" required />
+          <input type="email" name="email" placeholder="E-MAIL" required />
+          <input type="text" name="subject" placeholder="SUBJECT" required />
+          <textarea name="message" rows="6" placeholder="MESSAGE" required></textarea>
+          <button type="submit" class="submit-btn">SUBMIT</button>
+        </form>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shopping Cart - Glamoure Glow</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">GLAMOURE GLOW</div>
+    <nav>
+      <a href="index.html">HOME</a>
+      <a href="about.html">ABOUT</a>
+      <a href="shop.html">SHOP</a>
+      <a href="review.html">REVIEW</a>
+       <a href="ourteam.html">OUR TEAM</a>
+    </nav>
+    <div class="cart-icon">🛒</div>
+  </header>
+
+  <main class="cart-section">
+    <div class="cart-container">
+      <div class="cart-left">
+        <h2>Shopping Cart</h2>
+        <div class="cart-item">
+          <img src="imgabout/fotoproduk.png" alt="Serum Product" />
+          <div class="cart-details">
+            <p><strong>NAMA SERUM</strong></p>
+            <p>US $00</p>
+            <a href="#">Remove</a>
+            <div class="quantity">
+              <button>-</button>
+              <span>1</span>
+              <button>+</button>
+            </div>
+            <p><strong>TOTAL</strong> US $00</p>
+          </div>
+        </div>
+
+        <!-- Product Suggestions -->
+        <div class="product-suggestions">
+          <div class="product-card">
+            <img src="imgcart/promosi1.png" alt="Oil Soap" />
+            <p>Oil Soap</p>
+            <p>$5.00</p>
+            <button>ADD TO CART</button>
+          </div>
+          <div class="product-card">
+            <img src="imgcart/promosi2.png" alt="Oil Soap" />
+            <p>Oil Soap</p>
+            <p>$5.00</p>
+            <button>ADD TO CART</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="cart-right">
+        <form>
+          <label>Email address</label>
+          <input type="email" placeholder="NAME" required />
+
+          <label>Pay with</label>
+          <div class="pay-method">
+            <button type="button" class="pay-card">💳 Card</button>
+            <button type="button" class="pay-paypal">🅿️ PayPal</button>
+          </div>
+
+          <label>Name On Card</label>
+          <input type="text" placeholder="NAME" required />
+
+          <label>Card Information</label>
+          <input type="text" placeholder="CARD INFO" required />
+
+          <label>Contact Information</label>
+          <input type="text" placeholder="CONTACT" required />
+
+          <button type="submit" class="submit-btn">PAY</button>
+        </form>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
