@@ -24,15 +24,36 @@ header {
   font-weight: bold;
 }
 
-nav a {
+/* nav a { 
   margin: 0 15px;
   text-decoration: none;
   color: black;
   font-weight: 500;
+}*/
+
+/* nav a.active {
+  color: #cc7c8e;
+} */
+
+nav a {
+  text-decoration: none;
+  transition: 0.4s;
+  position: relative;
 }
 
-nav a.active {
-  color: #cc7c8e;
+nav a::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 4px;
+  background-color: #ffa5a5;
+  bottom: 0;
+  left: 0;
+  transition: width 0.4s;
+}
+
+nav a:hover::before {
+  width: 100%;
 }
 
 .cart-icon {
@@ -532,7 +553,6 @@ nav a:hover {
   font-weight: bold;
 }
 
-
 /* ========================= */
 /*    OUR TEAM PAGE STYLE   */
 /* ========================= */
@@ -593,7 +613,7 @@ nav a:hover {
 .quote-author {
   margin-top: 10px;
   text-align: right;
-  font-weight: bold;
+  font-weight: bold;
 }
 
 main h1 {
@@ -618,7 +638,6 @@ hr {
   border-top: 2px solid #eee;
   width: 80%;
 }
-
 
 .team-member {
   text-align: center;
@@ -666,7 +685,6 @@ hr {
   color: #333;
   margin-bottom: 20px;
   text-align: center;
-
 }
 
 /* Social Icons - Horizontal layout, text under icon */
@@ -702,17 +720,7 @@ hr {
   height: 150px;
   object-fit: contain;
   margin-top: 5px;
-  
-
 }
-
-
-
-
-
-
-
-
-
-
-
+.GoogleMaps p{
+  text-align: center;
+}
