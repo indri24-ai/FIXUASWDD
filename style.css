@@ -20,7 +20,7 @@ header {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background-color: white; /* atau warna yang kamu inginkan */
+  background-color: white; 
   padding: 10px 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* opsional, buat bayangan saat sticky */
 
@@ -32,19 +32,6 @@ header {
   font-weight: bold;
 }
 
-/* nav a { 
-=======
-/* nav a {
->>>>>>> Stashed changes
-  margin: 0 15px;
-  text-decoration: none;
-  color: black;
-  font-weight: 500;
-}*/
-
-/* nav a.active {
-  color: #cc7c8e;
-} */
 
 nav a {
   text-decoration: none;
@@ -68,22 +55,21 @@ nav a:hover::before {
   width: 100%;
 }
 
+.cart-icon {
+  font-size: 24px;
+}
 nav a.active {
   color: #cc7c8e;
 } */
 
 
-.cart-icon {
-  font-size: 24px;
-}
-
-.hero {
+.home {
   display: flex;
   justify-content: center;
   padding: 20px;
 }
 
-.hero img {
+.home img {
   width: 100%;
   max-width: 2000px;
   height: 500px;
@@ -185,9 +171,6 @@ nav a.active {
   color: #d78c8c;
 }
 
-.cart-icon {
-  font-size: 20px;
-}
 
 /* About Page Layout */
 .about-container {
@@ -205,8 +188,8 @@ nav a.active {
 }
 
 .about-left img {
-  width: 180px;
-  height: 180px;
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
   object-fit: cover;
   border: 5px solid #ddd;
@@ -283,9 +266,6 @@ nav a:hover {
   font-weight: bold;
 }
 
-.cart-icon {
-  font-size: 24px;
-}
 .dropdown {
   position: relative;
   display: inline-block;
@@ -322,7 +302,7 @@ nav a:hover {
 /* Shop Header */
 .shop-header {
   text-align: center;
-  padding: 40px 20px 20px;
+  padding: 40px 20px 5px;
 }
 
 .shop-header h1 {
@@ -331,6 +311,7 @@ nav a:hover {
   font-weight: bold;
   color: #333;
   margin-bottom: 15px;
+  margin-top: -10px;
 }
 
 .shop-header p {
