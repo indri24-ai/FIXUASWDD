@@ -58,9 +58,51 @@ nav a:hover::before {
 .cart-icon {
   font-size: 24px;
 }
-nav a.active {
-  color: #cc7c8e;
-} */
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav a.active,
+nav a:hover {
+  color: #de7f9e;
+  font-weight: bold;
+}
+
+
+.footer {
+  margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 30px 10px 10px;
+  background: linear-gradient(to bottom, #f8f6f6 0%, #fef6f9 100%);
+  border-top: 2px solid #ddd;
+  box-shadow: inset 0 10px 15px rgba(0, 0, 0, 0.03);
+}
+  
+.contact-left {
+  flex: 1;
+  min-width: 250px;
+  margin-bottom: 20px;
+  
+}
+
+.contact-left h2 {
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.copyr{
+  text-align: center;
+}
+
+*/
 
 
 .home {
@@ -145,30 +187,10 @@ nav a.active {
   }
 }
 
-/*CSS ABOUT
-/* Header */
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 40px;
-  border-bottom: 1px solid #999;
-}
 
 .logo {
   font-weight: bold;
   font-size: 20px;
-}
-
-.navbar a {
-  margin: 0 10px;
-  text-decoration: none;
-  color: black;
-}
-
-.navbar a.active {
-  font-weight: bold;
-  color: #d78c8c;
 }
 
 
@@ -236,15 +258,7 @@ body {
   line-height: 1.6;
 }
 
-/* Header */
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 50px;
-  border-bottom: 1px solid #ccc;
-  background-color: #fff;
-}
+
 
 .logo {
   font-size: 24px;
@@ -252,19 +266,7 @@ header {
   color: #000;
 }
 
-nav a {
-  margin: 0 15px;
-  text-decoration: none;
-  color: #333;
-  font-weight: 500;
-  transition: color 0.3s;
-}
 
-nav a.active,
-nav a:hover {
-  color: #de7f9e;
-  font-weight: bold;
-}
 
 .dropdown {
   position: relative;
@@ -299,19 +301,14 @@ nav a:hover {
   display: block;
 }
 
-/* Shop Header */
-.shop-header {
-  text-align: center;
-  padding: 40px 20px 5px;
-}
+
 
 .shop-header h1 {
   font-size: 32px;
   font-style: italic;
   font-weight: bold;
   color: #333;
-  margin-bottom: 15px;
-  margin-top: -10px;
+  padding-top: 20px;
 }
 
 .shop-header p {
@@ -451,6 +448,10 @@ nav a:hover {
   background-color: #f8f6f6;
 }
 
+a { /*supaya gada garis di bawah cart*/
+  text-decoration: none;
+}
+
 .cart-container {
   display: flex;
   gap: 30px;
@@ -558,7 +559,7 @@ nav a:hover {
 .ceo-section {
   display: flex;
   flex-wrap: wrap;
-  align-items: flex-start;
+  align-items: center;
   gap: 40px;
   padding: 40px;
   max-width: 1000px;
@@ -566,13 +567,13 @@ nav a:hover {
 }
 
 .profile {
-  text-align: center;
   flex: 1 1 250px;
+  text-align: center;
 }
 
 .ceo-photo {
-  width: 400px;
-  height: 400px;
+  width: 380px;
+  height: 380px;
   object-fit: cover;
   border-radius: 50%;
   border: 3px solid #e8aebb;
@@ -613,7 +614,8 @@ nav a:hover {
   text-align: right;
   font-weight: bold;
 }
-
+ 
+/*MEET OUR TEAM*/
 main h1 {
   text-align: center;
   margin: 40px 0 20px;
@@ -663,27 +665,7 @@ hr {
   color: #333;
 }
 
-.contact-section {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 40px 20px;
-  background-color: #fef6f9;
-  border-radius: 10px;
-}
-
-.contact-left,
-.contact-right {
-  flex: 1;
-  min-width: 250px;
-  margin-bottom: 20px;
-}
-
-.contact-left h2 {
-  color: #333;
-  margin-bottom: 20px;
-  text-align: center;
-}
+/*FOOTER*/
 
 /* Social Icons - Horizontal layout, text under icon */
 .social-icons {
