@@ -21,10 +21,7 @@ header {
   top: 0;
   z-index: 1000;
   background-color: white; 
-  padding: 10px 20px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* opsional, buat bayangan saat sticky */
-
-
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .logo {
@@ -32,13 +29,14 @@ header {
   font-weight: bold;
 }
 
-
 nav a {
+  margin: 0 15px;
   text-decoration: none;
-  transition: 0.4s;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
   position: relative;
 }
-
 
 nav a::before {
   content: "";
@@ -55,41 +53,32 @@ nav a:hover::before {
   width: 100%;
 }
 
-.cart-icon {
-  font-size: 24px;
-}
-
-nav a {
-  margin: 0 15px;
-  text-decoration: none;
-  color: #333;
-  font-weight: 500;
-  transition: color 0.3s;
-}
-
 nav a.active,
 nav a:hover {
   color: #de7f9e;
   font-weight: bold;
 }
 
+.cart-icon {
+  font-size: 24px;
+}
 
 .footer {
-  margin-top: 100px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 30px 10px 10px;
+  align-items: flex-start;
+  padding: 20px 10px;
+  margin-top: 70px;
   background: linear-gradient(to bottom, #f8f6f6 0%, #fef6f9 100%);
   border-top: 2px solid #ddd;
   box-shadow: inset 0 10px 15px rgba(0, 0, 0, 0.03);
 }
-  
+
 .contact-left {
   flex: 1;
   min-width: 250px;
   margin-bottom: 20px;
-  
 }
 
 .contact-left h2 {
@@ -98,13 +87,31 @@ nav a:hover {
   text-align: center;
 }
 
-.copyr{
+.copyr {
   text-align: center;
 }
 
-*/
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .description,
+  .images {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .images img {
+    width: 90px;
+    height: 90px;
+  }
+}
 
 
+/*CSS INDEX*/
 .home {
   display: flex;
   justify-content: center;
@@ -168,30 +175,6 @@ nav a:hover {
   background-color: #b86666;
 }
 
-@media (max-width: 768px) {
-  .content {
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-  }
-
-  .description,
-  .images {
-    max-width: 100%;
-    text-align: center;
-  }
-
-  .images img {
-    width: 90px;
-    height: 90px;
-  }
-}
-
-
-.logo {
-  font-weight: bold;
-  font-size: 20px;
-}
 
 
 /* About Page Layout */
@@ -245,27 +228,6 @@ nav a:hover {
 
 /* CSS SHOPP*/
 /* Reset dasar */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Arial", sans-serif;
-}
-
-body {
-  background-color: #f7f5f5;
-  color: #333;
-  line-height: 1.6;
-}
-
-
-
-.logo {
-  font-size: 24px;
-  font-weight: bold;
-  color: #000;
-}
-
 
 
 .dropdown {
@@ -301,14 +263,12 @@ body {
   display: block;
 }
 
-
-
 .shop-header h1 {
   font-size: 32px;
   font-style: italic;
   font-weight: bold;
   color: #333;
-  padding-top: 20px;
+  padding-top: 10px;
 }
 
 .shop-header p {
@@ -383,7 +343,6 @@ body {
   padding: 40px;
   display: flex;
   justify-content: center;
-  background-color: #f8f6f6;
 }
 
 .review-container {
@@ -673,14 +632,16 @@ hr {
   justify-content: center;
   gap: 30px;
   flex-wrap: wrap;
-  margin-top: 10px;
+  margin-top: 30px;
 }
 
-.social-icons div {
+.social-icons a {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  text-decoration: none;
+  color: inherit;
 }
 
 .social-icons img {
@@ -694,9 +655,7 @@ hr {
   font-size: 14px;
   color: #333;
 }
-.JudulMaps p{
-  text-align: center;
-}
+
 
 .qr-code {
   width: 150px;
