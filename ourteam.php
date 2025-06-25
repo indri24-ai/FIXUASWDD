@@ -1,25 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Our Team - Glamoure Glow</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header>
-      
-      <div class="logo">GLAMOURE GLOW</div>
-      <nav>
-      <a href="index.html">HOME</a>
-      <a href="about.html">ABOUT</a>
-      <a href="shop.html">SHOP</a>
-      <a href="review.html">REVIEW</a>
-      <a href="ourteam.html" class="active">OUR TEAM</a>
-      </nav>
-      <a href="cart.html"><span class="cart-icon">🛒</span></a>
-    </header>
-
+  <?php include_once 'template/header.php'; ?>
 <main>
 
   <!-- CEO Section -->
@@ -33,8 +14,7 @@
     <div class="description">
       <p><strong>Di Glamoure Glow</strong>, setiap produk dan filosofi yang kami anut adalah hasil dari dedikasi dan kerja keras tim yang bersemangat. Kami adalah sekelompok individu yang percaya pada kekuatan perawatan kulit alami dan berkomitmen untuk menghadirkan kualitas terbaik kepada Anda. Kami bersatu dari latar belakang dan keahlian yang beragam, dengan satu tujuan: menciptakan pengalaman perawatan kulit yang efektif, menyenangkan, dan berkelanjutan.</p>
       <div class="quote-box">
-        <p>
-     "Kami bangga dengan kolaborasi dan inovasi yang menjadi inti dari tim kami. Setiap anggota membawa perspektif unik dan berkontribusi dalam setiap tahap, mulai dari riset dan pengembangan formula hingga pengujian dan kepuasan pelanggan. Kami bekerja bersama dengan cermat untuk memastikan bahwa setiap produk Glamoure Glow memenuhi standar kualitas tertinggi dan memberikan hasil yang Anda inginkan."
+        <p> "Kami bangga dengan kolaborasi dan inovasi yang menjadi inti dari tim kami. Setiap anggota membawa perspektif unik dan berkontribusi dalam setiap tahap, mulai dari riset dan pengembangan formula hingga pengujian dan kepuasan pelanggan. Kami bekerja bersama dengan cermat untuk memastikan bahwa setiap produk Glamoure Glow memenuhi standar kualitas tertinggi dan memberikan hasil yang Anda inginkan."
         </p>
         <p class="quote-author">— Cahya, CEO Glamoure Glow</p>
       </div>
@@ -76,29 +56,6 @@
         </div>
             </section>
             </main>
+            <?php include_once 'template/footer.php'; ?>
   </body>
-
-<section class="footer">
-  <div class="contact-left">
-    <h2>Contact Us!</h2>
-
-    <div class="social-icons">
-      <a href="https://www.instagram.com/ling_prg/"><img src="imgourteam/logofb.png" alt="Facebook" /><p>glamoureglow.id</p></a>
-      <a href="https://www.instagram.com/ling_prg/"><img src="imgourteam/logoig.png" alt="Instagram" /><p>glamoureglow.id</p></a>
-      <a href="https://www.instagram.com/ling_prg/"><img src="imgourteam/logoyt.png" alt="YouTube" /><p>glamoureglow.id</p></a>
-      <a href="https://www.instagram.com/ling_prg/"><img src="imgourteam/logox.png" alt="Twitter" /><p>glamoureglow.id</p></a>
-      <a href="mailto:glamoureglow@gmail.com"><img src="imgourteam/logogmail.jpg" alt="Email" /><p>glamoureglow@gmail.com</p></a>
-    </div>
-  </div>
-
-  <div class="JudulMaps">
-    <p><strong>Google Maps:</strong></p>
-    <img src="imgourteam/qr.webp" class="qr-code" alt="Google Maps QR" />
-  </div>
-  </section>
-  <div class="copyr">
-    <p>&copy; 2025 Glamoure Glow. All rights reserved.</p>
-  </div>
-
-</html>
 
