@@ -40,7 +40,7 @@
       <!-- Second Row -->
       <section class="team-grid">
         <div class="team-member">
-          <img src="imgourteam/ambar.png" alt="Alfredo" />
+          <img src="imgourteam/alfredo.jpg" alt="Alfredo" />
           <p class="position">ADMIN</p>
           <p class="name"><strong>Alfredo</strong></p>
         </div>

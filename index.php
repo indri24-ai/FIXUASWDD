@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="id">
-
+<body>
     <?php include_once 'template/header.php'; ?>
 
   <section class="home">
