@@ -10,7 +10,7 @@
   <section class="content">
     <div class="description">
       <p>Jelajahi dunia perawatan kulit yang bersih, lembap, dan penuh perhatian bersama Glamoure Glow. Temukan rangkaian produk alami kami yang dirancang untuk menutrisi kulit Anda dari dalam.</p>
-      <a href="shop.html"  class="shop-button">SHOP NOW</a>
+      <a href="shop.php"  class="shop-button">SHOP NOW</a>
     </div>
     <div class="images">
       <img src="imghome/produk1.jpg" alt="Produk 1" />

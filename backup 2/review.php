@@ -1,24 +1,3 @@
-<?php
-if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $conn = new mysqli("localhost", "root", "", "db_glamore");
-
-    if ($conn->connect_error) {
-        die("Koneksi gagal: " . $conn->connect_error);
-    }
-
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $subject = $_POST['subject'];
-    $message = $_POST['message'];
-
-    $stmt = $conn->prepare("INSERT INTO reviews (name, email, subject, message) VALUES (?, ?, ?, ?)");
-    $stmt->bind_param("ssss", $name, $email, $subject, $message);
-    $stmt->execute();
-
-    $conn->close();
-    echo "Review berhasil dikirim!";
-}
-?>
 <!DOCTYPE html>
 <html lang="en">
     <?php include_once 'template/header.php'; ?>
@@ -35,13 +14,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
       </div>
 
       <div class="review-right">
-        <form action="review.php" method="POST">
+        <form action="https://formspree.io/f/yourFormID" method="POST">
           <input type="text" name="name" placeholder="NAME" required />
           <input type="email" name="email" placeholder="E-MAIL" required />
           <input type="text" name="subject" placeholder="SUBJECT" required />
           <textarea name="message" rows="6" placeholder="MESSAGE" required></textarea>
           <button type="submit" class="submit-btn">SUBMIT</button>
-</form>
+        </form>
       </div>
     </div>
   </main>
