@@ -7,7 +7,7 @@
     <div class="about-left">
       <img src="imgabout/fotoproduk.png" alt="produk">
      
-      <h2 class="ceo-name">Glamoure Glow</h2>
+      <h2 class="ceo-name">Glamoure Glow</h2> 
     </div>
     <div class="about-right">
       <p class="about-intro"><em>
@@ -19,7 +19,6 @@
       </p>
     </div>
   </main>
-        </section>
 
         <?php include_once 'template/footer.php'; ?>
     </body>
